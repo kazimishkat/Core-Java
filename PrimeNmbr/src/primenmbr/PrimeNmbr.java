@@ -1,20 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package primenmbr;
 
-/**
- *
- * @author Admin
- */
-public class PrimeNmbr {
+import java.util.Scanner;
 
-    /**
-     * @param args the command line arguments
-     */
+public class PrimeNmbr {
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner n=new Scanner(System.in);
+        int number=n.nextInt();
+        int count=0;
+        for(int i=1;i<=number;i++){
+            if(number%1==0){
+                count=count+1;
+            }
+        }
+        
     }
     
 }
