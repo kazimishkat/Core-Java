@@ -5,14 +5,19 @@ import java.util.Scanner;
 
 public class PrimeNmbr {
     public static void main(String[] args) {
-        Scanner n=new Scanner(System.in);
-        int number=n.nextInt();
-        int count=0;
-        for(int i=1;i<=number;i++){
-            if(number%1==0){
-                count=count+1;
+        Scanner s = new Scanner(System.in);
+        System.out.println("enter number");
+        int input = s.nextInt();
+        int primeNumber = 0;
+        for (int i = 1; i <= input; i++) {
+            if (input % i == 0) {
+                primeNumber = primeNumber + 1;
+            }}
+            if (primeNumber == 2) {
+                System.out.println("its prime number");
+            } else {
+                System.out.println("its not prime number");
             }
-        }
         
     }
     
