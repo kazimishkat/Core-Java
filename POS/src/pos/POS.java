@@ -4,6 +4,9 @@
  */
 package pos;
 
+import pos.dao.UserDao;
+import pos.model.User;
+
 /**
  *
  * @author Admin
@@ -15,6 +18,11 @@ public class POS {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        User u= new User("mishkat", "mishkat123");
+        
+        UserDao ud=new UserDao();
+        
+        ud.saveUser(u);
     }
     
 }
